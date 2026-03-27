@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-size: calc(100vw / (1920 / var(--theme-rem-unit, 100))) !important;
+  --bg: #090c13;
+  --bg-soft: #111725;
+  --text-main: #f5f1e8;
+  --text-muted: rgba(245, 241, 232, 0.62);
+  --font-sans: 'Manrope', sans-serif;
+  --font-display: 'Cormorant Garamond', serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at top, rgba(255, 182, 102, 0.12), transparent 30%),
+    linear-gradient(180deg, #0d111b 0%, #090c13 48%, #080a11 100%);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 3.2rem;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.025)),
+    linear-gradient(transparent 0%, rgba(9, 12, 19, 0.16) 100%);
+  mix-blend-mode: screen;
+  opacity: 0.35;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(255, 196, 124, 0.3);
+  color: var(--text-main);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.16rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(-2%, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(2%, 2%, 0) scale(1.05);
+  }
+}
+
+@keyframes float-one {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-0.14rem, 0.12rem, 0);
+  }
+}
+
+@keyframes float-two {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0.1rem, -0.12rem, 0);
+  }
+}
+
+@keyframes float-three {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-0.06rem, -0.08rem, 0) scale(1.06);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: scale(1.04);
+    opacity: 0.2;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

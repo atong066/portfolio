@@ -13,6 +13,7 @@ const projects: Array<{
   href?: string
 }> = [
   { id: '01', name: 'HRMS', type: 'Live product', summary: 'A human resources management system focused on employee workflows, admin visibility, and operational clarity.', impact: 'Built as a live web experience with a production-style dashboard surface.', href: 'https://atong066.github.io/hrms/' },
+  { id: '02', name: 'LMS', type: 'Live product', summary: 'A learning management system centered on course flow, learner progress, and a cleaner training experience.', impact: 'Extends the project lineup with an education-focused application surface.', href: 'https://atong066.github.io/lms/' },
 ]
 
 const skills = [

@@ -225,7 +225,7 @@ export default function App() {
       </Section>
 
       <Section label="Services">
-        <div className="grid max-w-[11rem] grid-cols-[minmax(0,1.18fr)_minmax(0,.82fr)] gap-[.22rem] max-[1080px]:grid-cols-1">
+        <div className="grid max-w-[11rem] grid-cols-[minmax(0,1.18fr)_minmax(0,.82fr)] gap-[.22rem] min-[721px]:-mt-[.12rem] max-[1080px]:grid-cols-1">
           <motion.div initial={{ opacity: 0, y: reduceMotion ? 0 : 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={once} transition={{ duration: reduceMotion ? 0 : 0.7, ease }} className="relative overflow-hidden rounded-[.32rem] border border-[rgba(255,255,255,0.08)] bg-[radial-gradient(circle_at_top_left,rgba(255,196,124,0.09),transparent_28%),linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.012))] px-[.24rem] py-[.24rem] shadow-[0_.16rem_.38rem_rgba(0,0,0,0.14)] max-[720px]:rounded-[.26rem] max-[720px]:border-[rgba(255,221,185,0.12)] max-[720px]:bg-[radial-gradient(circle_at_top_left,rgba(255,196,124,0.12),transparent_38%),linear-gradient(180deg,rgba(255,236,212,0.07),rgba(255,255,255,0.02))] max-[720px]:px-[.2rem] max-[720px]:py-[.22rem] max-[720px]:shadow-[0_.16rem_.38rem_rgba(0,0,0,0.18)]">
             <div className="pointer-events-none absolute left-[.2rem] top-[.24rem] hidden h-[.8rem] w-[.02rem] bg-[linear-gradient(180deg,rgba(255,196,124,.85),rgba(255,196,124,0))] min-[721px]:block" />
             <motion.div aria-hidden="true" className="pointer-events-none absolute inset-x-[.24rem] top-0 h-[.02rem] bg-[linear-gradient(90deg,rgba(255,196,124,0),rgba(255,196,124,.9),rgba(255,196,124,0))] max-[1080px]:hidden max-[720px]:block" />

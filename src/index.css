@@ -31,6 +31,22 @@ body {
   background: var(--bg);
 }
 
+@media (max-width: 1080px) {
+  :root {
+    --theme-rem-unit: 132;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --theme-rem-unit: 265;
+  }
+
+  body {
+    min-width: 0;
+  }
+}
+
 body::before {
   content: '';
   position: fixed;

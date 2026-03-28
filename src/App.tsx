@@ -214,6 +214,18 @@ export default function App() {
                   {project.href ? <motion.a href={project.href} target="_blank" rel="noreferrer" whileHover={reduceMotion ? undefined : { x: 4 }} className="text-inherit no-underline">{project.name}</motion.a> : project.name}
                 </h2>
                 <p className={`${copyClass} max-w-[5.2rem] text-[.18rem] leading-[1.65] max-[720px]:text-[.16rem] max-[720px]:leading-[1.6]`}>{project.summary}</p>
+                {project.href ? (
+                  <motion.a
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    whileHover={reduceMotion ? undefined : { x: 4 }}
+                    className="mt-[.14rem] inline-flex items-center gap-[.08rem] text-[.14rem] font-semibold uppercase tracking-[.16em] text-[rgba(255,196,124,0.9)] no-underline transition-colors duration-200 hover:text-[rgba(255,221,185,1)] max-[720px]:mt-[.12rem] max-[720px]:text-[.16rem]"
+                  >
+                    View live project
+                    <span aria-hidden="true" className="text-[.18rem] leading-none">↗</span>
+                  </motion.a>
+                ) : null}
               </div>
               <div className="relative rounded-[.2rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.018)] px-[.16rem] py-[.16rem] min-[721px]:min-h-[1.7rem]">
                 <p className="mb-[.06rem] text-[.12rem] uppercase tracking-[.18em] text-[rgba(245,241,232,0.4)]">Project note</p>

@@ -14,6 +14,7 @@ const projects: Array<{
 }> = [
   { id: '01', name: 'HRMS', type: 'Live product', summary: 'A human resources management system focused on employee workflows, admin visibility, and operational clarity.', impact: 'Built as a live web experience with a production-style dashboard surface.', href: 'https://atong066.github.io/hrms/' },
   { id: '02', name: 'LMS', type: 'Live product', summary: 'A learning management system centered on course flow, learner progress, and a cleaner training experience.', impact: 'Extends the project lineup with an education-focused application surface.', href: 'https://atong066.github.io/lms/' },
+  { id: '03', name: 'Nueva Vizcaya Tourism', type: 'Live experience', summary: 'A destination-led tourism site designed to showcase places, local culture, and a more immersive travel narrative.', impact: 'Expands the portfolio with a visual marketing surface focused on discovery and place-based storytelling.', href: 'https://atong066.github.io/tourism_site/' },
 ]
 
 const skills = [

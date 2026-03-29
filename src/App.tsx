@@ -18,9 +18,9 @@ const projects: Array<{
 ]
 
 const skills = [
-  { label: 'Frontend systems', title: 'React architecture with calm, scalable structure', detail: 'Interfaces that feel expressive on the surface and maintainable underneath.' },
-  { label: 'Motion craft', title: 'Framer Motion scenes that feel authored', detail: 'Scroll, hover, and entrance motion sharpen hierarchy instead of adding noise.' },
-  { label: 'Visual polish', title: 'Tailwind workflows tuned to a design eye', detail: 'Fast iteration, precise spacing, and more intentional surfaces without generic component soup.' },
+  { label: 'Frontend systems', title: 'React architecture with calm, scalable structure', detail: 'Built with React, TanStack Query, Zustand, Tailwind CSS, and production-minded state patterns.' },
+  { label: 'Platform delivery', title: 'Full-stack systems across admin, e-commerce, and school products', detail: 'Hands-on with Node.js, Express, Laravel, PostgreSQL, MySQL, and REST API integration.' },
+  { label: 'Production craft', title: 'Interfaces shaped by real client delivery', detail: 'From casino platforms to school systems and e-commerce builds, the work is designed to ship and stay maintainable.' },
 ]
 
 const principles = [
@@ -48,12 +48,41 @@ const services = [
 ]
 
 const heroHighlights = [
-  { value: 'Admin UI', label: 'Dashboards and workflow surfaces' },
-  { value: 'Motion', label: 'Framer-led interaction systems' },
-  { value: 'Ship-ready', label: 'Built for real product delivery' },
+  { value: '2019-2026', label: 'Professional full-stack experience' },
+  { value: 'React + Laravel', label: 'Frontend and backend product delivery' },
+  { value: 'REST APIs', label: 'Integration across production systems' },
 ]
 
-const stack = ['React', 'JavaScript', 'Node.js', 'Python', 'Vite', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'API integration', 'Full-stack architecture']
+const experience = [
+  {
+    period: '2025 - 2026',
+    role: 'Full Stack Web Developer',
+    company: 'IWEB IT Solutions',
+    detail: 'Built frontend and backend features for e-commerce platforms, handled REST API integration, maintained live systems, and led full-stack delivery.',
+  },
+  {
+    period: '2023 - 2024',
+    role: 'Full Stack Web Developer',
+    company: 'Fly Asian International',
+    detail: 'Worked as lead frontend React developer for an online casino platform, with code review ownership and product maintenance responsibilities.',
+  },
+  {
+    period: '2022 - 2023',
+    role: 'Full Stack Web Developer',
+    company: 'Azitech I.T Solutions',
+    detail: 'Delivered a school web application with a responsive UI and real-time notifications while integrating closely with backend services.',
+  },
+  {
+    period: '2019 - 2022',
+    role: 'Full Stack Web Developer and Computer Teacher',
+    company: 'Saint Louis School',
+    detail: 'Taught programming and web development while handling hardware, software, network, and web system maintenance.',
+  },
+]
+
+const resumeStack = ['React JS', 'TanStack Query', 'Zustand', 'Node.js', 'Express', 'Laravel', 'PostgreSQL', 'MySQL', 'Python', 'Flask', 'FastAPI', 'REST APIs']
+
+const stack = ['React', 'JavaScript', 'Node.js', 'Python', 'Laravel', 'Express', 'MySQL', 'PostgreSQL', 'Tailwind CSS', 'REST APIs', 'AWS', 'Full-stack architecture']
 const labelClass = 'text-[.12rem] uppercase tracking-[.24em] text-[rgba(245,241,232,0.45)] max-[720px]:text-[.24rem]'
 const copyClass = 'm-0 text-[.16rem] leading-[1.7] text-[rgba(245,241,232,0.72)]'
 const once = { once: true, amount: 0.28 }
@@ -90,12 +119,12 @@ export default function App() {
             I design and build interfaces with cinematic motion, crisp hierarchy, and a distinct frontend voice.
           </motion.h1>
           <motion.p variants={itemVariants(reduceMotion, 0.16)} className="mt-[.16rem] max-w-[4.8rem] text-[.17rem] leading-[1.7] text-[rgba(245,241,232,0.76)] max-[720px]:mt-[.14rem] max-[720px]:max-w-[4.05rem] max-[720px]:text-[.19rem] max-[720px]:leading-[1.54]">
-            Full-stack web developer focused on modern application architecture, polished admin surfaces, and interactions that make complex workflows feel clear.
+            Full-stack web developer with hands-on experience in school systems, casino platforms, e-commerce products, and modern admin interfaces.
           </motion.p>
           <motion.div variants={itemVariants(reduceMotion, 0.2)} className="hidden max-[720px]:mt-[.14rem] max-[720px]:grid max-[720px]:grid-cols-[1fr_auto] max-[720px]:items-end max-[720px]:gap-[.12rem] max-[720px]:rounded-[.22rem] max-[720px]:border max-[720px]:border-[rgba(255,255,255,0.08)] max-[720px]:bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015))] max-[720px]:px-[.16rem] max-[720px]:py-[.14rem]">
             <div>
               <p className="m-0 text-[.14rem] uppercase tracking-[.18em] text-[rgba(245,241,232,0.42)]">Current focus</p>
-              <p className="mt-[.05rem] text-[.2rem] leading-[1.45] text-[rgba(245,241,232,0.84)]">Admin dashboards, workflow apps, and high-clarity product UI.</p>
+              <p className="mt-[.05rem] text-[.2rem] leading-[1.45] text-[rgba(245,241,232,0.84)]">React, Laravel, Node.js, REST APIs, and product UI that ships cleanly.</p>
             </div>
             <div className="flex items-center gap-[.06rem]">
               <span className="h-[.12rem] w-[.12rem] rounded-full bg-[#ffc47c] shadow-[0_0_.14rem_rgba(255,196,124,0.7)]" />
@@ -172,6 +201,47 @@ export default function App() {
                 <p className="mb-[.05rem] text-[.12rem] uppercase tracking-[.18em] text-[rgba(245,241,232,0.5)] max-[720px]:text-[.2rem]">{skill.label}</p>
                 <h3 className="m-0 text-[.22rem] font-semibold leading-[1.2] text-[rgba(245,241,232,0.96)] max-[720px]:text-[.34rem]">{skill.title}</h3>
                 <p className="mt-[.06rem] text-[.15rem] leading-[1.7] text-[rgba(245,241,232,0.68)] max-[720px]:text-[.24rem] max-[720px]:leading-[1.6]">{skill.detail}</p>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section label="Experience">
+        <div className="grid max-w-[11rem] gap-[.12rem]">
+          <div className="grid grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] gap-[.18rem] max-[1080px]:grid-cols-1">
+            <motion.div initial={{ opacity: 0, y: reduceMotion ? 0 : 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={once} transition={{ duration: reduceMotion ? 0 : 0.7, ease }} className="rounded-[.28rem] border border-[rgba(255,255,255,0.08)] bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] px-[.24rem] py-[.22rem] shadow-[0_.14rem_.3rem_rgba(0,0,0,0.12)]">
+              <p className="mb-[.08rem] text-[.12rem] uppercase tracking-[.2em] text-[rgba(245,241,232,0.46)]">Education</p>
+              <h2 className="m-0 font-[var(--font-display)] text-[.52rem] leading-[.94] font-semibold tracking-[-.03em]">Bachelor of Science in Computer Science</h2>
+              <p className="mt-[.12rem] text-[.18rem] leading-[1.65] text-[rgba(245,241,232,0.72)]">Nueva Vizcaya State University, 2019</p>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: reduceMotion ? 0 : 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={once} transition={{ duration: reduceMotion ? 0 : 0.72, delay: reduceMotion ? 0 : 0.06, ease }} className="rounded-[.22rem] border border-[rgba(255,255,255,0.08)] bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-[.2rem] shadow-[0_.1rem_.24rem_rgba(0,0,0,0.14)]">
+              <p className="mb-[.08rem] text-[.12rem] uppercase tracking-[.2em] text-[rgba(245,241,232,0.46)]">Core stack from resume</p>
+              <div className="mt-[.22rem] grid grid-cols-2 gap-[.1rem] max-[1080px]:grid-cols-1">
+                {resumeStack.map((item, index) => (
+                  <motion.div key={item} initial={{ opacity: 0, y: reduceMotion ? 0 : 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={once} transition={{ duration: reduceMotion ? 0 : 0.55, delay: reduceMotion ? 0 : 0.04 * index, ease }} className="rounded-[.16rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(10,14,25,0.46)] px-[.14rem] py-[.14rem] text-[.15rem] text-[rgba(245,241,232,0.82)]">
+                    {item}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+          <div className="grid gap-[.1rem]">
+            {experience.map((item, index) => (
+              <motion.article key={`${item.company}-${item.period}`} initial={{ opacity: 0, y: reduceMotion ? 0 : 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={once} transition={{ duration: reduceMotion ? 0 : 0.65, delay: reduceMotion ? 0 : 0.07 * index, ease }} className="grid grid-cols-[1.4rem_minmax(0,1.1fr)_minmax(0,1.3fr)] items-start gap-[.18rem] rounded-[.24rem] border border-[rgba(255,255,255,0.08)] bg-[linear-gradient(180deg,rgba(255,255,255,0.025),rgba(255,255,255,0.01))] px-[.2rem] py-[.2rem] shadow-[0_.12rem_.28rem_rgba(0,0,0,0.12)] max-[1080px]:grid-cols-1">
+                <div>
+                  <p className="m-0 text-[.12rem] uppercase tracking-[.18em] text-[rgba(245,241,232,0.42)]">Period</p>
+                  <p className="mt-[.06rem] text-[.18rem] leading-[1.45] text-[rgba(245,241,232,0.8)]">{item.period}</p>
+                </div>
+                <div>
+                  <p className="m-0 text-[.12rem] uppercase tracking-[.18em] text-[rgba(245,241,232,0.42)]">Role</p>
+                  <h3 className="mt-[.06rem] font-[var(--font-display)] text-[.36rem] leading-[1] font-semibold tracking-[-.03em]">{item.role}</h3>
+                  <p className="mt-[.08rem] text-[.18rem] leading-[1.55] text-[rgba(245,241,232,0.72)]">{item.company}</p>
+                </div>
+                <div>
+                  <p className="m-0 text-[.12rem] uppercase tracking-[.18em] text-[rgba(245,241,232,0.42)]">Highlights</p>
+                  <p className="mt-[.06rem] text-[.18rem] leading-[1.65] text-[rgba(245,241,232,0.78)]">{item.detail}</p>
+                </div>
               </motion.article>
             ))}
           </div>
